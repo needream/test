@@ -1,0 +1,9 @@
+body { font-family: system-ui, sans-serif; background: #f5f7fb; margin: 0; }
+.container { max-width: 840px; margin: 24px auto; padding: 0 16px; }
+.panel { display: flex; flex-direction: column; gap: 10px; background: white; padding: 14px; border-radius: 12px; }
+textarea,input,button { font-size: 16px; }
+button { border: none; background: #3467ff; color: white; border-radius: 8px; padding: 10px; cursor: pointer; }
+.preview { margin-top: 14px; background: white; border-radius: 12px; padding: 12px; display: flex; justify-content: center; }
+canvas { width: 100%; max-width: 420px; border-radius: 12px; background: #fff; }
+.download { display: inline-block; margin-top: 12px; background: #12a150; color: white; text-decoration: none; padding: 10px 14px; border-radius: 8px; }
+.disabled { opacity: .55; pointer-events: none; }
