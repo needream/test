@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>人物动作 GIF 表情包生成器</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>人物动作 GIF 表情包生成器</h1>
+      <p>上传照片 + 输入文案，自动生成动作并下载 GIF。</p>
+
+      <section class="panel">
+        <label>上传人物照片</label>
+        <input id="photoInput" type="file" accept="image/*" />
+
+        <label>输入文案</label>
+        <textarea id="promptInput" rows="3" placeholder="例如：好的，收到！"></textarea>
+
+        <button id="generateBtn">一键生成 GIF</button>
+        <p id="status">等待生成...</p>
+      </section>
+
+      <section class="preview">
+        <canvas id="canvas" width="512" height="512"></canvas>
+      </section>
+
+      <a id="downloadLink" class="download disabled" href="#" download="meme_motion.gif">下载 GIF</a>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/gif.js.optimized/dist/gif.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
